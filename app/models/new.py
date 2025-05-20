@@ -5,8 +5,8 @@ from db import Base
 from sqlalchemy.sql import func
 
 
-class Author(Base):
-    __tablename__ = "authors"
+class NewAuthor(Base):
+    __tablename__ = "newauthors"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(100), nullable=False)

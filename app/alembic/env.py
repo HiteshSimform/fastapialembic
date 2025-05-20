@@ -13,9 +13,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from app.db import Base, DATABASE_URL
-from app.models import user, author, book,genre
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+from db import Base, DATABASE_URL
+from models import user, author, book, genre
 
 ################
 
@@ -29,7 +29,7 @@ if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
 # updated
-config.set_main_option("sqlalchemy.url", DATABASE_URL) 
+config.set_main_option("sqlalchemy.url", DATABASE_URL)
 
 # add your model's MetaData object here
 # for 'autogenerate' support
