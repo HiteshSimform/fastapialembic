@@ -37,6 +37,7 @@ config.set_main_option("sqlalchemy.url", DATABASE_URL)
 # target_metadata = mymodel.Base.metadata
 # target_metadata = None
 # Update
+from models.testuser import TestUserr
 target_metadata = Base.metadata
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
